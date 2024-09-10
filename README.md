@@ -26,11 +26,11 @@ CONDITIONALS = if else statements
 
     
     let is_even: bool = true;
-        if is_even {
-            println!("The number is even");
-        } else {
-            println!("The number is odd");
-        }
+    if is_even {
+        println!("The number is even");
+    } else {
+        println!("The number is odd");
+    }
 
 
 LOOPS:
@@ -84,7 +84,6 @@ Stack: Upon execution of a program in RUST, a portion of RAM memory is allocated
     ````
     let my_number: i32 = 3; // a stack frame containing my_number is pushed to the Stack
     other_function(other_number: my_number); // another stack frame containing other_number is pushed to the Stack
-
 Heap: Heap is used to store strings or vectors whose size may change during runtime. 
 
 - The program consisting of variables of varying sizes pushes a stack frame on the Stack, the stack frame consists of a pointer (address) to a contiguous memory (heap) to store varying length variables.
@@ -146,7 +145,7 @@ STRUCTS:
                 print!("Perimeter");
                 return 2 * (self.width * self.height);
             }
-        }
+    }
 
 ENUMS:
 
@@ -159,7 +158,6 @@ ENUMS:
     	South,
 	    West
     }
-
 PATTERN MATCHING ENUMS:
 
 - use "match" keyword
@@ -190,7 +188,6 @@ ERROR HANDLING:
         Ok(..) => print!("Read!"),
         Err(..) => print!("Error!"),
     };
-
 OPTION ENUMS:
 
 - to remove null types in rust
