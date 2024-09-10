@@ -7,6 +7,7 @@ Why?
 - Rust is multi-threaded
 
 Cargo.toml => package.json
+
 main.rs => index.js
 
 CREATE A RUST PROJECT: cargo init
