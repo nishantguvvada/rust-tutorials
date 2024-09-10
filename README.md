@@ -98,7 +98,6 @@ Heap: Heap is used to store strings or vectors whose size may change during runt
 - The owner on the Stack points to the memory allocated on the heap.
 - The memory cannot live without the owner.
 - The memory can only have 1 owner
-
     ```
     let s1: String = String::from("hello");
     let s2 = s1; // s2 is the new owner of "hello", s1 is cleaned up
@@ -106,7 +105,6 @@ Heap: Heap is used to store strings or vectors whose size may change during runt
 
     let my_string: String = String::from("hello")
     takes_ownership(some_string: my_string) // some_string is the owner of "hello" and my_string is deleted
-
 COPYING ON HEAP IS EXPENSIVE!
 
 BORROWING AND REFERENCES:
@@ -120,7 +118,6 @@ BORROWING AND REFERENCES:
     let s4: &String = &s1;
     let s5: &String = &s1;
     let s6: &String = &s1;
-
  - s2 (points to s1) => s1 (points to memory on the heap) => heap
 
 Mutable references:
@@ -203,7 +200,6 @@ OPTION ENUMS:
 	    None,
 	    Some(T)
     }
-
 DEPENDENCIES: use `cargo add [package_name]` to install crates (packages)
 
 https://projects.100xdevs.com/tracks/rust-bootcamp/Rust-Bootcamp-1
