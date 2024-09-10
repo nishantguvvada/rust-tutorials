@@ -132,9 +132,6 @@ Mutable references:
     let mut s1: String = String::from("Hello"); // original variable is mutable 
     update_str(&mut s1); // use &mut to borrow mutable variables
     // CANNOT use references of s1 anymore
-
-
-
 STRUCTS:
 
 - structs bind variables together
@@ -157,17 +154,19 @@ STRUCTS:
 ENUMS:
 
 - define variants instead of strings
+
     ```
-enum Direction {
-	North,
-	East,
-	South,
-	West
-}
+    enum Direction {
+    	North,
+    	East,
+    	South,
+	    West
+    }
 
 PATTERN MATCHING ENUMS:
 
 - use "match" keyword
+
     ```
     fn move_around(direction: Direction) {
     // implement logic to move a character
@@ -198,11 +197,12 @@ ERROR HANDLING:
 OPTION ENUMS:
 
 - to remove null types in rust
+
     ```
-pub enum Option<T> {
-	None,
-	Some(T)
-}
+    pub enum Option<T> {
+	    None,
+	    Some(T)
+    }
 
 DEPENDENCIES: use `cargo add [package_name]` to install crates (packages)
 
