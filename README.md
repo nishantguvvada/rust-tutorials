@@ -127,30 +127,32 @@ Mutable references:
 
 - the original variable must be mutable
 - only a single mutable reference is allowed.
+
     ```
-let mut s1: String = String::from("Hello"); // original variable is mutable 
-update_str(&mut s1); // use &mut to borrow mutable variables
-// CANNOT use references of s1 anymore
+    let mut s1: String = String::from("Hello"); // original variable is mutable 
+    update_str(&mut s1); // use &mut to borrow mutable variables
+    // CANNOT use references of s1 anymore
 
 
 
 STRUCTS:
 
 - structs bind variables together
+
     ```
-struct Rect {
-    width: u32,
-    height: u32,
-}
-impl Rect {
-        fn area(&self) -> u32 {
-            return self.width * self.height;
-        }
-        fn perimeter(&self) -> u32 {
-            print!("Perimeter");
-            return 2 * (self.width * self.height);
-        }
+    struct Rect {
+        width: u32,
+        height: u32,
     }
+    impl Rect {
+            fn area(&self) -> u32 {
+                return self.width * self.height;
+            }
+            fn perimeter(&self) -> u32 {
+                print!("Perimeter");
+                return 2 * (self.width * self.height);
+            }
+        }
 
 ENUMS:
 
